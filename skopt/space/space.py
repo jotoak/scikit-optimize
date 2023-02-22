@@ -533,7 +533,7 @@ class Integer(Dimension):
         if self.dtype == int or self.dtype == 'int':
             # necessary, otherwise the type is converted to a numpy type
             return getattr(np.round(inv_transform).astype(self.dtype),
-                           "tolist", lambda: value)()
+                           "tolist")()
         else:
             return np.round(inv_transform).astype(self.dtype)
 

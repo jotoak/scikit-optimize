@@ -92,7 +92,7 @@ def test_extra_forest():
     assert_array_equal(clf.predict(T), true_result)
     assert 10 == len(clf)
 
-    clf = ExtraTreesRegressor(n_estimators=10, max_features=1, random_state=1)
+    clf = ExtraTreesRegressor(n_estimators=10, max_features=1.0, random_state=1)
     clf.fit(X, y)
     assert_array_equal(clf.predict(T), true_result)
     assert 10 == len(clf)

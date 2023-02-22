@@ -3,5 +3,7 @@ scipy>=1.10.0
 scikit-learn>=1.2.1
 matplotlib>=2.0.0
 pytest
+flake8
 pyaml>=16.9
 joblib>=0.11
+

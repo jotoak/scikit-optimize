@@ -346,7 +346,7 @@ class Real(Dimension):
                                 self.low, self.high).astype(self.dtype)
         if self.dtype == float or self.dtype == 'float':
             # necessary, otherwise the type is converted to a numpy type
-            return getattr(inv_transform, "tolist", lambda: value)()
+            return getattr(inv_transform, "tolist")()
         else:
             return inv_transform
 
